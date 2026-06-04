@@ -1,0 +1,853 @@
+.top-menu {
+    display: block !important;
+}
+
+@font-face {
+    font-family: 'CloverGrotesk';
+    src: url('../webfonts/CloverGrotesk-Regular.woff2') format('woff2'); /* Fayl adını tam olaraq proyektindəkini yaz */
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CloverGrotesk', sans-serif !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Clovergrotesk Medium', sans-serif;
+    background-color: #ffffff;
+}
+
+header, .main-nav, nav {
+    position: relative !important;
+    z-index: 999999 !important; /* Hər şeyin üstündə duracaq */
+}
+
+.project-title{
+    font-size:72px;
+    text-align:center;
+    color:#111;
+}
+
+.project-intro{
+    max-width:800px;
+
+    margin:30px auto 15px;
+
+    text-align:center;
+
+    font-size:28px;
+    line-height:1.5;
+
+    color:#053d3d;
+}
+
+.project-services{
+    text-align:center;
+
+    font-size:20px;
+    letter-spacing:2px;
+
+    color:#ffffff;
+
+    margin-bottom:60px;
+}
+
+body.projekte-page {
+    background-color: #69bcbc;
+    color: white; 
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100vh; 
+}
+
+.about-desc {
+    color: #ffffff;
+    font-size: 22px;       
+    line-height: 1.9;      
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;      
+}
+
+.about-desc h1 {
+    color: #69bcbc;
+    font-size: 48px;       
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.about-desc h3 {
+    color: #69bcbc;
+    font-size: 32px;       
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.about-desc ul li {
+    margin-bottom: 35px;   
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: 0.8px; 
+}
+
+
+.about-desc ul li strong {
+    display: block;        
+    color: #ffffff;        
+    font-size: 24px;       
+    margin-bottom: 8px;    
+    font-weight: 600;      
+    letter-spacing: 0.2px;
+}
+
+
+/* ==========================================================================
+   2. MAIN WRAPPER (Desktop Layout)
+   ========================================================================== */
+.home-page .main-wrapper {
+    height: 100vh !important; 
+    background-image: url('/images/Psd_1.png') !important;
+}
+
+.home-page .desc, 
+.home-page .main-title {
+    width: auto !important; 
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+/* ==========================================================================
+   3. CONTENT LEFT 
+   ========================================================================== */
+.content-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding: 5% 5% 5% 10%; 
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 250px; 
+    height: auto;
+}
+
+.hero-text {
+    margin-bottom: 5vh; 
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 2.5px;
+    color: #83b6b8;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+
+.main-title {
+    font-size: 4.8rem; 
+    line-height: 1.05;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    color: #2b2b2b;
+}
+
+.main-title .highlight {
+    color: #5ba4a6; 
+}
+
+/* ==========================================================================
+   4. CONTENT RIGHT (Sağ firuzəyi hissə)
+   ========================================================================== */
+.content-right {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 8% 10% 10% 5%; 
+    position: relative;
+}
+
+.home-page .main-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: auto; 
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: block;
+    text-align: left; 
+    padding: 10px 0;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer-cta{
+    position:relative;
+    min-height:100vh;
+    background:#7bc6c8;
+    padding-bottom: 20px;
+    min-height: auto;
+
+.footer{
+    border-top:1px solid rgba(255, 255, 255, 0.08);
+}
+
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+
+    overflow:hidden;
+}
+
+.footer-inner{
+    text-align:center;
+}
+
+.footer-title{
+    font-family:'Elmira';
+    font-weight:400;
+    font-size:clamp(60px,5vw,110px);
+    line-height:1.1;
+    color:#000c0c;
+}
+
+.footer-subtitle{
+    font-size:40px;
+    color:#000c0c;
+    font-family: "CloverGrotesk";
+}
+
+.footer-divider{
+    width: 800px;
+    height:2px;
+    background:#000c0c;
+    margin: 80px;
+}
+
+.footer-copy{
+    position:absolute;
+    bottom:50px;
+    font-size:14px;
+    letter-spacing:1px;
+    color:#000c0c;
+}
+
+/* ==========================================
+   STICKY KONTAKT LINKS
+========================================== */
+
+.sticky-contact{
+    position:fixed;
+    left:60px;
+    bottom:60px;
+    z-index:1000;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.sticky-contact a{
+    text-decoration:none;
+    color:#053d3d;
+    font: size 16px;
+    font-family: "CloverGrotesk";
+}
+
+/* ==========================================
+   STICKY SOCIAL RECHTS
+========================================== */
+
+.sticky-social{
+    position:fixed;
+    right:60px;
+    bottom:50px;
+    z-index:1000;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.sticky-social span{
+    writing-mode:vertical-rl;
+    font-size:16px;
+    color:#053d3d;
+}
+
+.social-line{
+    width:1px;
+    height:120px;
+    background:#053d3d;
+    margin:25px 0;
+}
+
+.sticky-social a{
+    color:#111;
+    font-size:45px;
+    text-decoration:none;
+}
+
+/* ==========================================
+   FOOTER AKTIV
+========================================== */
+
+body.footer-active .sticky-contact,
+body.footer-active .sticky-social{
+    opacity:0;
+    pointer-events:none;
+
+    transition:.4s;
+}
+
+.mobile-nav{
+    display:none;
+}
+
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .main-wrapper {
+        flex-direction: column;
+        min-height: 100vh;
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .content-left {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    .logo-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .hero-text {
+        margin-top: 200px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .main-title {
+        margin-top: 5px;
+        font-size: 58px;
+        line-height: 0.95;
+        margin-bottom: 20px;
+    }
+
+    .content-right {
+        width: 100%;
+        padding: 20px 20px 60px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-info {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+        background: #f4f9f9;
+        padding: 60px;
+        border-radius: 15px;
+        border-left: 4px solid #5ba4a6;
+    }
+
+    .footer-info p {
+        max-width: 320px;
+        color: #444;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .mobile-menu span {
+        background: #5ba4a6;
+        transition: 0.3s;
+    }
+
+    .mobile-nav a {
+        font-size: 1.4rem;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding: 15px 0;
+    }
+
+    .mobile-nav.active {
+        display: block !important;
+    }
+}
+/* BURGER MENU */
+
+.mobile-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    position:absolute;
+
+    top:10px;
+    right:0;
+
+    cursor:pointer;
+
+    z-index:999;
+}
+
+.mobile-menu span{
+
+    width:38px;
+    height:4px;
+
+    background:#ffffff;
+
+    border-radius:10px;
+}
+.mobile-menu {
+    cursor: pointer;
+    padding: 10px;
+    background: transparent;
+    border: none;
+}
+
+.mobile-nav {
+    display: none; 
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #a8dadc; /* Daha yumşaq yaşıl/mavi ton */
+    padding: 10px 0;
+    border-radius: 15px;
+    z-index: 9999;
+    min-width: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Kölgə əlavə etdik */
+    backdrop-filter: blur(5px); /* Arxa fonu bir az bulanıq edir */
+}
+
+.mobile-nav a {
+    display: block;
+    color: #053d3d; /* Yazı rəngi */
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    transition: background 0.3s ease; /* Hamar keçid */
+}
+
+/* HOVER PROBLEMİNİ HƏLL ETMƏK ÜÇÜN: */
+/* Sadəcə hover zamanı rəng dəyişsin, bütün fon dəyişməsin */
+.mobile-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Yüngül ağlı şəffaflıq */
+    color: #fff;
+}
+
+
+/* Header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Hauptbereich & Grid */
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 Spalten */
+    gap: 30px;
+    margin-top: 40px;
+    grid-auto-rows: minmax(240px, auto);
+}
+
+.card {
+    border: none;
+    padding: 0;
+    background-color: #ffffff;
+    color: #2b2b2b;
+    border-radius: 22px;
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.card:hover,
+.card:focus-visible {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.12);
+    outline: none;
+}
+
+.card-media {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-label {
+    padding: 24px 22px 20px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.card--tall {
+    height: 560px;
+    background-color: black;
+}
+
+.card--large {
+    height: 420px;
+    background-color: #053d3d
+}
+
+.card--short {
+    min-height: 260px;
+    background-color: turquoise;
+}
+
+.project-lightbox {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.72);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.24s ease, visibility 0.24s ease;
+    z-index: 2000;
+    padding: 24px;
+}
+
+.project-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.lightbox-panel {
+    position: relative;
+    width: min(100%, 1000px);
+    max-height: min(100%, 920px);
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 40px 90px rgba(0, 0, 0, 0.25);
+}
+
+.lightbox-image {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    max-height: calc(100vh - 180px);
+}
+
+.lightbox-title {
+    margin: 0;
+    padding: 24px 26px 28px;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #1f1f1f;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: #ffffffeb;
+    color: #222222;
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Footer */
+.page-footer {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Mobile Optimierung */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* Alles untereinander auf Handy */
+    }
+}
+
+.main-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/Psd_1.png'); 
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.page-transition-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background-color: #69bcbc;
+    z-index: 9999999;
+    pointer-events: none;
+    
+    /* Dairəni kəsirik */
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.page-transition-overlay.is-active {
+    clip-path: circle(150% at 50% 50%);
+}
+
+/* İstiqamətlər üçün */
+.from-left { clip-path: circle(0% at 0% 50%); }
+.from-left.is-active { clip-path: circle(150% at 0% 50%); }
+
+.from-right { clip-path: circle(0% at 100% 50%); }
+.from-right.is-active { clip-path: circle(150% at 100% 50%); }
+
+/* Aktiv səhifənin rəngi */
+.menu li a.active {
+    color: #053d3d !important;
+    font-weight: 700;
+}
+
+/* Digər linklərin üzərinə gələndə turkuaz olsun (aktivdən başqa) */
+.menu li a:not(.active):hover {
+    color: #69bcbc;
+}
+
+.page-about, .page-contact {
+    position: relative;
+    background-color: #f4f4f4 !important; /* Arxa fon ağ/boz qalsın */
+}
+
+/* Şəffaf firuzəyi lay */
+.page-about::after, .page-contact::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(168, 218, 220, 0.25); /* Firuzəyi, 25% şəffaflıq */
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 20% 100%);
+    z-index: 0; /* Məzmunun arxasında */
+    pointer-events: none;
+}
+
+/* Məzmunu layın önünə çıxarırıq */
+.page-about body > *, .page-contact body > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.diagonal-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(168, 218, 220, 0.2);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    pointer-events: none;
+}
+
+body > header, 
+body > .container, 
+body > footer {
+    position: relative;
+    z-index: 1;
+}
+
+
+.mobile-footer-links {
+    display: none !important;
+}
+
+
+/* --- MOBİL ÜÇÜN (Ekran 768px-dən kiçikdirsə) --- */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: flex !important; /* Mobildə görünür */
+        flex-direction: column;
+        gap: 6px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 99999;
+    }
+
+    .mobile-menu span {
+        width: 38px;
+        height: 4px;
+        background: #053d3d;
+        border-radius: 10px;
+    }
+
+    .mobile-nav {
+        display: none; 
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #a8dadc;
+        padding: 20px;
+        border-radius: 15px;
+        z-index: 9999;
+        min-width: 200px;
+    }
+}
+
+/* --- MOBİL ÜÇÜN (768px və aşağı) --- */
+@media (max-width: 768px) {
+    .mobile-menu { display: flex !important; }
+    .mobile-nav { display: none; }
+    .top-menu { display: none !important; } 
+    .sticky-contact, .sticky-social { display: none !important; }
+}
+
+/* --- DESKTOP ÜÇÜN (769px və yuxarı) --- */
+@media (min-width: 769px) {
+    .mobile-menu, .mobile-nav { display: none !important; }
+    .top-menu, .menu { display: block !important; }
+    
+    .sticky-contact {
+        position: fixed !important;
+        bottom: 50px;
+        left: 40px;
+        display: flex !important;
+        flex-direction: column;
+        z-index: 999;
+    }
+    .sticky-social {
+        position: fixed !important;
+        bottom: 50px;
+        right: 40px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 999;
+    }
+}
+
+/* --- HOVER EFFEKTİNİ BƏRPA ETMƏK --- */
+.top-menu .menu li a {
+    transition: color 0.3s ease; /* Yumşaq keçid üçün */
+    color: #053d3d; /* İlkin rəng */
+}
+
+.top-menu .menu li a:hover {
+    color: #025e5e !important; /* Tünd firuzəyi rəng (buranı öz rənginə uyğunlaşdıra bilərsən) */
+}
+
+a:hover {
+    color: #025e5e !important; /* Buradakı rəngi öz tünd firuzəyi rənginlə dəyiş */
+    transition: 0.3s !important;
+}
+/* Bu kod ən güclü prioriteti daşıyır */
+.top-menu .menu li a {
+    color: #053d3d !important;
+}
+
+.top-menu .menu li a:hover {
+    color: #025e5e !important; 
+    text-decoration: none !important;
+}
