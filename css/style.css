@@ -257,6 +257,71 @@ body.projekte-page {
     font-family: "CloverGrotesk";
 }
 
+@media (max-width:768px){
+
+    .footer-subtitle{
+        font-size:20px;
+        line-height:1.3;
+        text-align:center;
+    }
+
+    .footer-divider{
+        width:60%;
+        margin:40px auto;
+    }
+
+.mobile-contact {
+    display: none !important;
+}
+
+/* Und hier wird es nur für Handys explizit wieder aktiviert */
+@media (max-width: 992px) {
+    .mobile-contact {
+        display: flex !important; /* !important überschreibt die obige Regel nur hier */
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    @media (max-width:768px){
+
+    .footer-copy{
+        position:static !important;
+        display:block;
+        width:100%;
+        text-align:center;
+        margin-top:25px;
+        padding-bottom:20px;
+        line-height:1.6;
+    }
+
+}
+
+    @media (max-width:768px){
+
+    .footer-copy{
+        position:static !important;
+        display:block !important;
+        width:100%;
+        text-align:center;
+        margin-top:40px;
+        padding-top:20px;
+        line-height:1.6;
+    }
+
+}
+
+    .footer-copy{
+        position:static;
+        bottom:auto;
+        margin-top:30px;
+        text-align:center;
+        line-height:1.6;
+        font-size:14px;
+    }
+
+}
+
 .footer-divider{
     width: 800px;
     height:2px;
@@ -417,6 +482,20 @@ body.footer-active .sticky-social{
         line-height: 1.5;
     }
 
+    @media (max-width: 768px) {
+
+    .footer-info {
+        padding: 25px;
+        text-align: center;
+        border-left: none;
+        border-top: 4px solid #5ba4a6;
+    }
+
+    .footer-info p {
+        max-width: 100%;
+    }
+
+}
     .mobile-menu span {
         background: #5ba4a6;
         transition: 0.3s;
@@ -877,4 +956,51 @@ html {
     .main-nav {
         display: none !important;
     }
+}
+body .mobile-contact {
+    display: none !important;
+}
+
+@media (max-width: 992px) {
+    body .mobile-contact {
+        display: flex !important;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        margin-bottom: 2vh; /* Etwas Platz nach unten für das Smartphone */
+    }
+
+    .subtitle {
+        font-size: 0.7rem; /* Etwas kleiner für den schmalen Screen */
+        margin-bottom: 1rem;
+    }
+
+    .main-title {
+        font-size: 2.8rem !important; /* Von 4.8rem auf 2.8rem runter */
+        letter-spacing: -0.5px;      /* Etwas lockerer, damit es besser lesbar ist */
+        line-height: 1.1;
+    }
+}
+.subtitle br {
+    display: none;
+}
+
+/* Nur auf Mobile: Das <br> anzeigen */
+@media (max-width: 768px) {
+    .subtitle br {
+        display: block;
+    }
+    
+    /* Optional: Damit der Text in zwei Zeilen nicht zu groß wirkt */
+    .subtitle {
+        line-height: 1.4;
+        margin-bottom: 1.5rem;
+    }
+}
+.project-item:active {
+    transform: scale(0.98); /* Das Bild "zuckt" beim Tippen kurz */
+    opacity: 0.9;
 }
