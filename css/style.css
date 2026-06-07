@@ -245,12 +245,14 @@ body.projekte-page {
     color: #000c0c;
     margin-bottom: 20px;
 }
-@media (max-width: 768px) {
-    .footer-title {
-        font-size: 40px; /* Feste Größe für Mobile */
-        font-family: 'Elmira', sans-serif !important; /* Erzwingt Elmira auf Mobile */
-        line-height: 1.2; /* Etwas mehr Zeilenabstand für bessere Lesbarkeit */
-    }
+@font-face {
+    font-family: 'Elmira';
+    /* Pfad beginnt mit einem Slash, um vom Root-Verzeichnis der Seite zu starten */
+    src: url('/webfonts/ElmiraWoff.woff2') format('woff2'), 
+         url('/webfonts/ElmiraWoff.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; 
 }
 .footer-subtitle {
     font-size: clamp(18px, 3vw, 40px);
