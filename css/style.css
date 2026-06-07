@@ -367,6 +367,16 @@ body.projekte-page {
     color: #111;
     font-size: 45px;
     text-decoration: none;
+    /* Ergänze diese Zeile: */
+    display: flex;
+    justify-content: center;
+}
+
+/* Erzwinge die FontAwesome-Schriftart für das Icon innerhalb des Links */
+.sticky-social a i {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 5 Brands", sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* ==========================================
