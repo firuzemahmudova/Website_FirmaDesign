@@ -218,177 +218,155 @@ body.projekte-page {
 }
 
 /* ==========================================
-   FOOTER
+   FOOTER - Basis & Mobile Anpassungen
 ========================================== */
 
-.footer-cta{
-    position:relative;
-    min-height:100vh;
-    background:#7bc6c8;
-    padding-bottom: 20px;
+.footer-cta {
+    position: relative;
+    background: #7bc6c8;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
     min-height: auto;
-
-.footer{
-    border-top:1px solid rgba(255, 255, 255, 0.08);
 }
 
-    display:flex;
-    align-items:center;
-    flex-direction:column;
-
-    overflow:hidden;
+.footer-inner {
+    text-align: center;
+    max-width: 900px;
 }
 
-.footer-inner{
-    text-align:center;
+.footer-title {
+    font-family: 'Elmira';
+    font-weight: 400;
+    font-size: clamp(32px, 8vw, 110px);
+    line-height: 1.1;
+    color: #000c0c;
+    margin-bottom: 20px;
 }
 
-.footer-title{
-    font-family:'Elmira';
-    font-weight:400;
-    font-size:clamp(60px,5vw,110px);
-    line-height:1.1;
-    color:#000c0c;
-}
-
-.footer-subtitle{
-    font-size:40px;
-    color:#000c0c;
+.footer-subtitle {
+    font-size: clamp(18px, 3vw, 40px);
+    color: #000c0c;
     font-family: "CloverGrotesk";
 }
 
-@media (max-width:768px){
-
-    .footer-subtitle{
-        font-size:20px;
-        line-height:1.3;
-        text-align:center;
-    }
-
-    .footer-divider{
-        width:60%;
-        margin:40px auto;
-    }
-
-.mobile-contact {
-    display: none !important;
+.footer-divider {
+    width: 800px;
+    height: 2px;
+    background: #000c0c;
+    margin: 80px auto;
 }
 
-/* Und hier wird es nur für Handys explizit wieder aktiviert */
+.footer-copy {
+    position: static;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000c0c;
+}
+.footer-copy br {
+    display: none;
+}
+
+/* Auf Tablet & Mobile den Zeilenumbruch anzeigen */
+@media (max-width: 768px) {
+    .footer-copy br {
+        display: block;
+    }
+}
+
+/* Verstecke Mobile-Kontakt auf Desktop */
+.mobile-contact {
+    display: none;
+}
+
+/* ==========================================
+   TABLET & MOBILE (Media Queries)
+========================================== */
+
 @media (max-width: 992px) {
+    /* Sticky Elemente auf Mobile ausblenden */
+    .sticky-contact, 
+    .sticky-social {
+        display: none !important;
+    }
+
+    /* Mobile Kontakt-Bereich im Footer anzeigen */
     .mobile-contact {
-        display: flex !important; /* !important überschreibt die obige Regel nur hier */
+        display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 }
 
-    @media (max-width:768px){
-
-    .footer-copy{
-        position:static !important;
-        display:block;
-        width:100%;
-        text-align:center;
-        margin-top:25px;
-        padding-bottom:20px;
-        line-height:1.6;
+@media (max-width: 768px) {
+    .footer-title { font-size: 40px; }
+    
+    .footer-divider {
+        width: 80%;
+        margin: 40px auto;
     }
-
-}
-
-    @media (max-width:768px){
-
-    .footer-copy{
-        position:static !important;
-        display:block !important;
-        width:100%;
-        text-align:center;
-        margin-top:40px;
-        padding-top:20px;
-        line-height:1.6;
+    
+    .footer-copy {
+        margin-top: 40px;
+        padding-bottom: 20px;
     }
-
-}
-
-    .footer-copy{
-        position:static;
-        bottom:auto;
-        margin-top:30px;
-        text-align:center;
-        line-height:1.6;
-        font-size:14px;
-    }
-
-}
-
-.footer-divider{
-    width: 800px;
-    height:2px;
-    background:#000c0c;
-    margin: 80px;
-}
-
-.footer-copy{
-    position:absolute;
-    bottom:50px;
-    font-size:14px;
-    letter-spacing:1px;
-    color:#000c0c;
 }
 
 /* ==========================================
-   STICKY KONTAKT LINKS
+   STICKY ELEMENTE (Nur Desktop)
 ========================================== */
 
-.sticky-contact{
-    position:fixed;
-    left:60px;
-    bottom:60px;
-    z-index:1000;
-    display:flex;
-    flex-direction:column;
-    gap:15px;
+.sticky-contact {
+    position: fixed;
+    left: 60px;
+    bottom: 60px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.sticky-contact a{
-    text-decoration:none;
-    color:#053d3d;
-    font: size 16px;
+.sticky-contact a {
+    text-decoration: none;
+    color: #053d3d;
     font-family: "CloverGrotesk";
 }
 
-/* ==========================================
-   STICKY SOCIAL RECHTS
-========================================== */
-
-.sticky-social{
-    position:fixed;
-    right:60px;
-    bottom:50px;
-    z-index:1000;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+.sticky-social {
+    position: fixed;
+    right: 60px;
+    bottom: 50px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sticky-social span{
-    writing-mode:vertical-rl;
-    font-size:16px;
-    color:#053d3d;
+.sticky-social span {
+    writing-mode: vertical-rl;
+    font-size: 16px;
+    color: #053d3d;
 }
 
-.social-line{
-    width:1px;
-    height:120px;
-    background:#053d3d;
-    margin:25px 0;
+.social-line {
+    width: 1px;
+    height: 120px;
+    background: #053d3d;
+    margin: 25px 0;
 }
 
-.sticky-social a{
-    color:#111;
-    font-size:45px;
-    text-decoration:none;
+.sticky-social a {
+    color: #111;
+    font-size: 45px;
+    text-decoration: none;
 }
 
 /* ==========================================
