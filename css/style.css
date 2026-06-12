@@ -131,6 +131,7 @@ body.projekte-page {
     margin: 0 !important;
 }
 
+
 /* ==========================================================================
    3. CONTENT LEFT 
    ========================================================================== */
@@ -784,16 +785,20 @@ body > footer {
 
 /* --- MOBİL ÜÇÜN (Ekran 768px-dən kiçikdirsə) --- */
 @media (max-width: 768px) {
+
     .mobile-menu {
-        display: flex !important; /* Mobildə görünür */
+        display: flex !important;
         flex-direction: column;
         gap: 6px;
+
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 75px;
+        right: -100px;
+
         cursor: pointer;
         z-index: 99999;
     }
+}
 
     .mobile-menu span {
         width: 38px;
@@ -806,14 +811,13 @@ body > footer {
         display: none; 
         position: absolute;
         top: 70px;
-        right: 20px;
         background: #a8dadc;
         padding: 20px;
         border-radius: 15px;
         z-index: 9999;
         min-width: 200px;
     }
-}
+
 
 /* --- MOBİL ÜÇÜN (768px və aşağı) --- */
 @media (max-width: 768px) {
@@ -920,7 +924,7 @@ body .mobile-contact {
 
     @media (max-width: 767px) {
     .main-title {
-        font-size: 2.5rem !important; /* Fontu kiçilt */
+        font-size: 2rem !important; /* Fontu kiçilt */
         max-width: 90%;             /* Ekranın kənarlarından azca boşluq saxla */
         line-height: 1.1;           /* Sətirarası məsafəni azalt */
     }
@@ -953,97 +957,6 @@ body .mobile-contact {
     }
 }
 
-/* =====================================================
-   MOBILE HOME HERO – neues Layout
-   Nur Mobile / Desktop bleibt unverändert
-===================================================== */
-
-@media (max-width: 768px) {
-
-    body.home-page {
-        background: #ffffff;
-        overflow-x: hidden;
-    }
-
-    .home-page .main-wrapper {
-        display: flex !important;
-        flex-direction: column !important;
-        height: auto !important;
-        min-height: auto !important;
-
-        background-image: none !important;
-        background: #ECECEC !important;
-
-        padding: 0 !important;
-        gap: 0 !important;
-    }
-
-    .home-page .content-left {
-        width: 100% !important;
-        padding: 28px 24px 20px !important;
-        order: 1;
-    }
-
-    .home-page .logo {
-        width: 105px !important;
-        height: auto !important;
-    }
-
-    .home-page .mobile-menu {
-        top: 28px !important;
-        right: 24px !important;
-    }
-
-    .home-page .mobile-menu span {
-        background: #053d3d !important;
-    }
-
-    .home-page .hero-text {
-        margin-top: 55px !important;
-        margin-bottom: 35px !important;
-        max-width: 330px;
-    }
-
-    .home-page .subtitle {
-        font-size: 11px !important;
-        line-height: 1.5 !important;
-        letter-spacing: 2px !important;
-        color: #5ba4a6 !important;
-        margin-bottom: 18px !important;
-    }
-
-    .home-page .main-title {
-        font-size: 42px !important;
-        line-height: 1.02 !important;
-        letter-spacing: -1px !important;
-        color: #202020 !important;
-        max-width: 330px !important;
-        margin: 0 !important;
-    }
-
-    .home-page .main-title .highlight {
-        color: #5ba4a6 !important;
-    }
-
-    .home-page .content-right {
-        order: 2;
-        width: 100% !important;
-        min-height: 430px;
-        padding: 0 !important;
-
-
-    background-image: url('/images/Psd_1.png') !important;
-    background-size: cover !important;
-
-    background-position: 65% center !important;
-
-    background-repeat: no-repeat !important;
-}
-
-    .home-page .main-nav {
-        display: none !important;
-    }
-}
 
 /* Nur Mobile: Logo auf Kontakt/About richtig oben links */
 @media (max-width: 768px) {
