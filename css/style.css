@@ -792,7 +792,7 @@ body > footer {
 
         position: absolute;
         top: 75px;
-        right: -100px;
+        right: -50px;
 
         cursor: pointer;
         z-index: 99999;
@@ -1441,29 +1441,18 @@ body.page-about .footer-cta{
         display: none;
     }
 }
-/* TABLET: burger menu */
 @media (min-width: 662px) and (max-width: 992px) {
-
-    body.home-page .main-nav {
+    body.home-page .main-nav,
+    body.home-page .content-right {
         display: none !important;
     }
 
     body.home-page .mobile-menu {
         display: flex !important;
-        flex-direction: column !important;
-        gap: 6px !important;
         position: fixed !important;
         top: 30px !important;
-        right: 30px !important;
+        right: 45px !important;
         z-index: 999999 !important;
-    }
-
-    body.home-page .mobile-nav {
-        display: none;
-        position: fixed !important;
-        top: 80px !important;
-        right: 30px !important;
-        z-index: 999998 !important;
     }
 }
 
