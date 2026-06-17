@@ -3439,36 +3439,61 @@ iframe, object {
     }
 
     img {
-        /* max-height-i qaldırırıq və genişliyi sərbəst buraxırıq */
         max-height: none !important; 
-        height: 100px !important;    /* Burada rəqəmi dəyişərək loqonu istədiyin boya çatdır */
+        height: 100px !important;    
         width: auto !important;
         display: block !important;
         object-fit: contain !important;
     }
 }
 
-/* Boşluqları minimuma endirir */
 #section-started {
     height: auto !important;
-    min-height: auto !important; /* JS-in ölçü təyin etməsinin qarşısını alırıq */
-    padding-top: 40px !important; /* Yuxarıdan məsafəni daha da azaldırıq */
-    padding-bottom: 0px !important; /* Aşağıdan məsafəni sıfırlayırıq */
+    min-height: auto !important; 
+    padding-top: 40px !important; 
+    padding-bottom: 0px !important; 
 }
 
-/* Filtrin yuxarıya doğru çıxması üçün */
 .section.works {
     padding-top: 10px !important;
 }
 
-/* Başlığın ətrafındakı marginləri tamamilə öldürürük */
 .h-title {
     margin-top: 0 !important;
     margin-bottom: 20px !important;
 }
 
-/* Əgər hələ də çox boşluq qalsa, bu konteyneri sıxırıq */
 .centrize.full-width {
     padding: 0 !important;
     margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+    /* Erzwinge die Sichtbarkeit für Kategorie und Name */
+    .project-item .category, 
+    .project-item .name {
+        opacity: 1 !important;        /* Sichtbar machen */
+        visibility: visible !important;
+        position: relative !important; /* Aus dem Hover-Layer herausnehmen */
+        display: block !important;     /* Untereinander setzen */
+        transform: none !important;    /* Eventuelle Hover-Animationen stoppen */
+    }
+
+    /* Falls die Texte über dem Bild liegen, schieben wir sie jetzt darunter */
+    .project-item {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .category {
+        font-size: 0.8rem;
+        color: #5ba4a6; /* Dein Highlight-Farbton */
+        margin-top: 10px;
+    }
+    .name {
+        font-weight: bold;
+        margin-bottom: 20px; /* Platz zum nächsten Projekt */
+    }
 }
